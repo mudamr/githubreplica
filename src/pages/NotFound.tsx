@@ -27,7 +27,7 @@ const NotFound = () => {
 
   return (
     <>
-      <div className={classes.container}>
+      <div className={classes.container} data-testid="error-component">
         <h2 className={classes.header}>{message}</h2>
         <p className={classes.paragraph}>
           Go back to search for a GitHub user and view their repositories.
