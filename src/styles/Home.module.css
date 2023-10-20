@@ -1,0 +1,21 @@
+/* Styles for the welcome message container */
+.container {
+  display: flex;
+  flex-direction: column; /* Display content in columns */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #f8f8f8;
+}
+
+/* Styles for the heading and paragraph within the container */
+.heading {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.paragraph {
+  font-size: 18px;
+  margin: 0;
+}

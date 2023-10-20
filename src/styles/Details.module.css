@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+div img {
+  border-radius: 6px;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.boldLabel {
+  font-weight: bold;
+  justify-content: center;
+}
+
+.link {
+  font-size: 16px;
+  color: #0077cc;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.bulletin {
+  list-style: disc inside;
+  padding-left: 10px;
+  margin: 10px;
+}

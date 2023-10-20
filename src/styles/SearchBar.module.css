@@ -1,0 +1,84 @@
+.input {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.input::placeholder {
+  color: #ffffff;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #080808;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5da;
+  width: 80%;
+  margin-left: auto;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: #6a737d;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* Mobile screen cards stylings */
+@media screen and (max-width: 700px) {
+  .input {
+    width: 90%;
+    background-color: #dfe5ea;
+    outline: none;
+    border: none;
+    color: inherit;
+  }
+
+  .input::placeholder {
+    color: #090909;
+  }
+
+  .wrapper {
+    width: 100%;
+    background-color: #dfe5ea;
+    position: relative;
+    color: #000000;
+    text-align: center;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    column-gap: 2rem;
+    margin: auto;
+  }
+
+  .select {
+    background-color: #2b3743;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    width: 80%;
+  }
+
+  .form {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    font-family: inherit;
+  }
+}

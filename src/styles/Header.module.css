@@ -1,0 +1,31 @@
+/* Styles for the header */
+.header {
+  background-color: #24292e;
+  color: #fff;
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Centered search bar and form */
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+
+.SearchBar {
+  margin-left: auto; /* Push the search bar to the right */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
