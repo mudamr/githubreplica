@@ -6,7 +6,6 @@ import detailsCss from "../styles/Details.module.css";
 import { RepositoryData } from "types/RepsitoryData";
 import SearchBar from "components/SearchBar";
 import Cards from "components/Cards";
-import cardCss from "../styles/Card.module.css";
 
 const Detail = () => {
   const data = useLoaderData() as RepositoryData[];
@@ -47,9 +46,7 @@ const Detail = () => {
             placeholder="Search for repository"
           />
         </div>
-        <div className={`${cardCss.cards}`}>
-          <Cards repositories={filteredRepository} />
-        </div>
+        <Cards repositories={filteredRepository} />
       </div>
     </div>
   );
