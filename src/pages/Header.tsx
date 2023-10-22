@@ -9,7 +9,7 @@ const Header = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    navigate(`${username}`);
+    navigate(username);
   };
 
   return (
