@@ -15,6 +15,13 @@
   width: 100%;
 }
 
+.languageLabel {
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 10px;
+  background-color: #525252;
+}
+
 .card:hover {
   background-color: #f6f8fa;
   transform: translateY(-2px);
@@ -35,4 +42,15 @@
 .cardDescription {
   margin-top: 12px;
   color: #586069;
+}
+
+.additonalInfo {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.additonalInfo p {
+  flex: 1;
+  display: flex;
 }
