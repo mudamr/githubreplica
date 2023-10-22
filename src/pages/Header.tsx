@@ -20,6 +20,7 @@ const Header = () => {
           <SearchBar
             searchBarInputHandler={(e) => setUsername(e.target.value)}
             value={username}
+            placeholder="Search by User"
           />
         </Form>
       </header>

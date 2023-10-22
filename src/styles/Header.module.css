@@ -15,14 +15,13 @@
   color: #fff;
 }
 
-/* Centered search bar and form */
 .headerContent {
   display: flex;
   align-items: center;
 }
 
 .SearchBar {
-  margin-left: auto; /* Push the search bar to the right */
+  margin-left: auto;
 }
 
 body {

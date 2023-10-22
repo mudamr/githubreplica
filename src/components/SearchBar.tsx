@@ -1,17 +1,23 @@
 import React from "react";
 import classes from "../styles/SearchBar.module.css";
 
-const SearchBar = (props) => {
+interface SearchBarData {
+  value: string;
+  placeholder: string;
+  searchBarInputHandler: (e) => void;
+}
+
+const SearchBar = (props: SearchBarData) => {
   return (
     <div className={classes.wrapper}>
       <input
         className={classes.input}
         type="text"
-        placeholder="Search by user"
+        placeholder={props.placeholder}
         onChange={props.searchBarInputHandler}
         value={props.value}
       />
-      <button className={classes.clearButton} type="submit">
+      <button className={classes.searchButton} type="submit">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15"
