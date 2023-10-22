@@ -1,15 +1,15 @@
 import CardItem from "./CardItem";
 import classes from "../styles/Card.module.css";
-import { RepositoryData } from "types/RepsitoryData";
+import { RepositoryData } from "types/RepositoryData";
 import { Link } from "react-router-dom";
 import { getLanguageColor } from "utils/LanguageColors";
 
 interface RepositoryDetailsProps {
-  repositories: RepositoryData[];
+  repositories: RepositoryData[]; // Array containing list of repositories based on a single user
 }
 
+// Cards component that displays a list of repositories.
 const Cards = ({ repositories }: RepositoryDetailsProps) => {
-  console.log(repositories);
   return (
     <div className={classes.cards}>
       {repositories.map((repository) => (

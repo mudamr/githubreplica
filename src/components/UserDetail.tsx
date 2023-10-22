@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import classes from "../styles/Details.module.css";
-import { UserDetail } from "types/RepsitoryData";
+import { UserDetail } from "types/RepositoryData";
 
 interface UserDetailsProps {
   user: UserDetail;
 }
 
+// Side bar containing user name and avatar.
 const UserDetails = ({ user }: UserDetailsProps) => {
   return (
     <div>

@@ -10,6 +10,7 @@ import Header from "./pages/Header";
 import { loader as userDetailLoader } from "./pages/Detail";
 
 function App() {
+  // Define the routes for the application.
   const routes: RouteObject[] = [
     {
       path: "/",
@@ -30,8 +31,10 @@ function App() {
     },
   ];
 
+  // Create browser router based on defined routes
   const router = createBrowserRouter(routes);
 
+  // Return the prouter provider so routing functions are available through the whole app.
   return <RouterProvider router={router} />;
 }
 

@@ -2,11 +2,12 @@ import React from "react";
 import classes from "../styles/SearchBar.module.css";
 
 interface SearchBarData {
-  value: string;
-  placeholder: string;
-  searchBarInputHandler: (e) => void;
+  value: string; // current input value
+  placeholder: string; // placeholder for input field
+  searchBarInputHandler: (e) => void; // event handler for input changes
 }
 
+// SearchBar component that takes in the defined props.
 const SearchBar = (props: SearchBarData) => {
   return (
     <div className={classes.wrapper}>
@@ -18,6 +19,7 @@ const SearchBar = (props: SearchBarData) => {
         value={props.value}
       />
       <button className={classes.searchButton} type="submit">
+        {/* Maginifying glass icon for the search button. */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15"

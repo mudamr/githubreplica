@@ -1,3 +1,4 @@
+// Interface representing github repository data
 export interface RepositoryData {
   id: number;
   node_id: string;
@@ -86,6 +87,7 @@ export interface RepositoryData {
   default_branch: string;
 }
 
+// Interface representing details of a github user within a repository object
 export interface UserDetail {
   login: string;
   id: number;

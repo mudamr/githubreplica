@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import App from "../App";
 
+// Test homepage loading and not having any error messages on screen
 test("renders welcome page message", () => {
   render(<App />);
   const linkElement = screen.getByText(

@@ -3,16 +3,17 @@ import { Link, useRouteError } from "react-router-dom";
 import classes from "../styles/Error.module.css";
 
 interface ErrorData {
-  status: number;
+  status: number; // HTTP status code of error
   data: {
-    message: string;
+    message: string; // Message describing error
   };
 }
 
+// NotFound component is used to display different error messages based on the error status.
+//This component will be as errorElement in react router dom.
 const NotFound = () => {
   const error = useRouteError() as ErrorData;
   let message = "Something went wrong";
-  console.log(error);
   if (error.status === 404) {
     message = "The page you are looking for does not exist";
   }

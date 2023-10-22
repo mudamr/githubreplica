@@ -1,5 +1,6 @@
 import classes from "../styles/Home.module.css";
 
+// Home component renders landing page content.
 const Home = () => {
   return (
     <>
