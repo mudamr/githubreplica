@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# GitHub Repository Lister
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GitHub Repository Lister is a web application that allows you to list and filter GitHub repositories based on a user's profile. It's a simple project to explore github api in react.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Input**: Enter a GitHub username to fetch and display their repositories.
+- **Repository Filtering**: Easily search and filter repositories based on their names.
+- **Repository Details**: View detailed information about each repository, including its description, language, and last updated date.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository to your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/mudamr/githubreplica.git
+```
 
-### `npm test`
+2. Install project dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```cd github-repository-lister
+npm install
+```
 
-### `npm run build`
+3. Start local development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open your web browser and go to http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Enter a GitHub username, and the application will fetch and display the user's repositories.
 
-### `npm run eject`
+### Running Tests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run tests for this project, you can use the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Enter a GitHub username in the input field.
+2. Click the "Search" button, or press "Enter" to load the user's repositories.
+3. Use the search bar to filter repositories by name.
+4. Click on a repository to view more details.
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [React Router](https://reactrouter.com/) - For client-side routing.
+- [GitHub API](https://docs.github.com/en/rest) - To fetch user and repository data.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Next Steps
 
-### Code Splitting
+1. **API Authentication**: Implement authentication to allow users to access their private GitHub repositories. Currently, the application provides access to public repositories only and has a API limit without a token.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Search Filters**: Extend the search functionality by adding more filters to refine repository searches. Users could benefit from filtering options based on stars, forks, and more.
 
-### Analyzing the Bundle Size
+3. **User Profiles**: Add a separate API call to fetch user data. Currently this project uses the repository list api to fetch relavant user information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Improved Styling**: Improve the styling of the project by including a component library.
 
-### Making a Progressive Web App
+5. **Global Storage handling**: Enhance performance by adding a global state storage library like redux to store loaded repositories and avoid hitting the api call everytime.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Important Note
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The current version of the application is subject to GitHub's API rate limits. You may encounter limitations on the number of requests you can make in a specific time frame. Be aware of this constraint while using the application. For more information please refer to next steps point 1.
